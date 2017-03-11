@@ -1,0 +1,61 @@
+
+<!--PAGE CONTENT -->
+<div id="content">
+
+	<div class="inner">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header"><?php echo _('Usuario')?></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					   	<?php echo _('Registrar Usuario')?> 
+                    </div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-6">
+								<!--  <form action="<?php echo BASE_URL?>usuario/insertar" method="POST" class="form-signin"> -->
+								<form method="POST" class="form-signin" id="usuario">
+									<div class="form-group">
+										<label><?php echo _('Usuario')?></label> 
+										<input type="text" placeholder="<?php echo _('ID USUARIO')?>" class="form-control" name="idusuario" id="idusuario" />
+									</div>
+									<div class="form-group">
+										<label><?php echo _('Nombre')?></label> 
+										<input type="text" placeholder="<?php echo _('NOMBRE')?>" class="form-control" name="nombre" id="nombre" />
+									</div>
+									<div class="form-group">
+										<label><?php echo _('Contraseña')?></label> 
+										<input type="text" placeholder="<?php echo _('CONTRASEÑA')?>" class="form-control" name="clave1" id="clave1" />
+									</div>
+									<div class="form-group">
+										<label><?php echo _('Repita Contraseña')?></label> 
+										<input type="text" placeholder="<?php echo _('REPITA CONTRASEÑA')?>" class="form-control" name="clave2" id="clave2" />
+									</div>
+									<div class="form-group">
+										<label><?php echo _('Email')?></label> 
+										<input type="text" placeholder="<?php echo _('EMAIL')?>" class="form-control" name="email" name="email" id="email" />
+									</div>
+									<div class="form-group">
+										<label><?php echo _('Rol')?></label>
+										<select name="rol" class="form-control" id="rol">
+											<option value="Administrador"> <?php echo _('Administrador')?></option>
+											<option value="Supervisor"> <?php echo _('Supervisor')?></option>
+											<option value="Usuario"> <?php echo _('Usuario')?></option>
+										</select>
+									</div>
+									<button class="btn text-muted text-center btn-success"
+										type="button" id="btnRegistrar">Registrar</button>
+								</form>
+								<div id="zonaRespuesta"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
