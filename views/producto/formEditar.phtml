@@ -1,0 +1,85 @@
+
+<!--PAGE CONTENT -->
+<div id="content">
+
+	<div class="inner">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header"><?php echo _('Producto')?></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					   	<?php echo _('Editar Producto')?> 
+                    </div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-6">
+								<!--  <form action="<?php echo BASE_URL?>producto/editar" method="POST" class="form-signin"> -->
+								<form action="<?php echo BASE_URL?>producto/editar" method="POST"
+									class="form-signin" id="productoEditar">
+									
+									<div class="form-group">
+										<label><?php echo _('productCode')?></label> 
+										<input type="text" class="form-control" name="productCode" id="productCode"
+											value="<?php echo $this-> data-> productCode?>" readonly />
+									</div>
+									<div class="form-group">
+										<label><?php echo _('productName')?></label> 
+										<input type="text" class="form-control" name="productName" id="productName"
+											value="<?php echo $this-> data-> productName?>"  />
+									</div>
+									<div class="form-group">
+										<label><?php echo _('productLine')?></label> 
+										<input type="text" class="form-control" name="productLine" id="productLine"
+											value="<?php echo $this-> data-> productLine?>"  />
+									</div>
+									<div class="form-group">
+										<label><?php echo _('productScale')?></label> 
+										<input type="text" class="form-control" name="productScale" id="productScale"
+											value="<?php echo $this-> data-> productScale?>"  />
+									</div>
+									<div class="form-group">
+										<label><?php echo _('productVendor')?></label> 
+										<input type="text" class="form-control" name="productVendor" id="productVendor"
+											value="<?php echo $this-> data-> productVendor?>"  />
+									</div>
+									<div class="form-group">
+										<label><?php echo _('productDescription')?></label> 
+										<input type="text" class="form-control" name="productDescription" id="productDescription"
+											value="<?php echo $this-> data-> productDescription?>"  />
+									</div>
+									<div class="form-group">
+										<label><?php echo _('quantityInStock')?></label> 
+										<input type="text" class="form-control" name="quantityInStock" id="quantityInStock"
+											value="<?php echo $this-> data-> quantityInStock?>"  />
+									</div>
+									<div class="form-group">
+										<label><?php echo _('buyPrice')?></label> 
+										<input type="text" class="form-control" name="buyPrice" id="buyPrice"
+											value="<?php echo $this-> data-> buyPrice?>"  />
+									</div>
+									<div class="form-group">
+										<label><?php echo _('MSRP')?></label> 
+										<input type="text" class="form-control" name="MSRP" id="MSRP"
+											value="<?php echo $this-> data-> MSRP?>"  />
+									</div>
+									
+									
+									
+									<!-- 		<button class="btn text-muted text-center btn-success" type="submit">Guardar</button> -->
+									<button class="btn text-muted text-center btn-success"
+										type="button" id="btnGuardar">Guardar Cambios</button>
+
+								</form>
+								<div id="zonaRespuesta"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
