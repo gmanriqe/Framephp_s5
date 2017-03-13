@@ -36,7 +36,7 @@
 //  		$this-> _db-> query($sql);
 //  		return $this-> _db-> errno;
  		$result = $this->_db->query ( $sql ) or die ( 'Error: ' . $sql );
- 		return; 		
+ 		return $result; 		
  	}
  	
  	//insertar
@@ -51,6 +51,13 @@
 									buyPrice = $buyPrice,
 									MSRP = $MSRP";
  		$result = $this-> _db-> query($sql) or die ('Error: '.$sql);
+ 		return;
+ 	}
+ 	
+ 	//eliminar
+ 	public function eliminar($productCode){
+ 		$sql = "DELETE FROM Products WHERE productCode = '$productCode'";
+ 		$this-> _db-> query($sql) or die ('Error: '.$sql);
  		return;
  	}
  }

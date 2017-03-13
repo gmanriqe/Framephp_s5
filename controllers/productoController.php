@@ -68,5 +68,12 @@
 			if($result) echo 'Error';
 			else echo 'OK';
 		}
+		
+		public function eliminar($productCode =''){
+			$objModel = $this-> loadModel('producto');
+			$objModel -> eliminar($productCode);
+			
+			$this-> redireccionar('producto/index');
+		}
 	}	
 ?>
